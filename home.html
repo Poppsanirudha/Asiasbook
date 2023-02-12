@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link href="css/fotorama.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <title>Asiasbook</title>
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <p class="username-top">Upal C</p>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav px-4 mb-5" onclick="closeNav()">
+      <!-- <li class="nav-item ">
+                <a class="nav-link" href="#home-section">Home</a>
+            </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">GALLERY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog-head-section">BLOG</a>
+      </li>
+      <!-- <li class="nav-item ">
+                <a class="nav-link" href="#organaization-head-section">Organisations</a>
+            </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#share-head-section">ABOUT US</a>
+      </li>
+
+
+    </ul>
+    <div class=" login-box">
+      <a class="btn btn-outline-success btn-sm login-button mt-5" href="index.html" name="button">SIGN IN</a>
+    </div>
+
+  </div>
+
+  <nav class="navbar navbar-dark navbar-expand-md" uk-sticky="">
+    <div class="container">
+      <div class="UploadBox">
+        <!-- <p class="UploadText">Upload Image</p> -->
+        <button class="UploadBtn" name="button" data-toggle="modal" data-target="#createpost"><i class="fa fa-camera" aria-hidden="true"></i></button>
+      </div>
+      <div class="m-box text-center">
+      <a href="#home-section" class="logo">
+        <img src="img/logo1.png" alt="">
+      </a>
+      <p class="m-link text-center m-0 p-0">Dhaka, Bangladesh</p>
+      </div>
+        <!-- <div><p class="btn btn-outline-light uploadBtnNav" data-toggle="modal" data-target="#createpost"><i class="fa fa-picture-o" aria-hidden="true"></i> Upload Image</p></div> -->
+      <!-- <a class="logo logotitle text-right" href="#home-section">Asiasbook</a> -->
+      <p id="hamburger" style="font-size:30px;cursor:pointer; margin: 0;" onclick="openNav()">&#9776;</p>
+
+
+
+      <!-- <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarnav">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    </div>
+  </nav>
+
+  <!-- Gallery SECTION  -->
+
+  <!-- <div class="sticky-menu text-dark sticky-top" id="stickymenu">
+
+      <div class="row create-post-menu">
+
+        <div class="create-post-menu-mobile">
+          <div class="w-100 bg-light text-center create-post">
+            <p class=" pt-2 px-3" data-toggle="modal" data-target="#createpost"><i class="fa fa-picture-o" aria-hidden="true"></i>Filter</p>
+          </div>
+
+        </div>
+
+      </div>
+
+  </div> -->
+
+
+  <!-- Gallery MAIN SECTION Desktop-->
+
+
+
+  <section id="gallery" class="py-5 d-none d-md-block">
+
+
+
+    <!-- START -->
+
+    <div class="grid-container">
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username"><i class="fa fa-user" aria-hidden="true"></i>Niti</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://asiasbook.com/media/images/ksystgwbwmwks.jpg' alt=''>
+        <p class="img-box-addeess">Amtoli moshjid road</p>
+        <a href="" class="img-box-area">Mohakhali, Dhaka</a>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div><div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+
+
+</div>
+    <div class="col-md-12 text-center">
+      <a class="btn btn-outline-light mt-5 viewpost-btn" href="gallery.html">Gallery</a>
+    </div>
+
+
+
+
+</section>
+
+
+  <!-- Gallery MAIN SECTION Mobile-->
+  <section id="gallery" class="py-5 d-md-none d-block">
+    <!-- START -->
+
+    <div class="grid-container">
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3 wow fadeIn' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3 wow fadeIn' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3 wow fadeIn' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3 wow fadeIn' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div class="grid-box">
+        <div class="img-box">
+        <span class="username">Raihan</span>
+        <span class="img-overlay">12.06.22</span>
+        <img loading="lazy" class='grid-item grid-item-3 wow fadeIn' src='https://asiasbook.com/media/images/PXL_20220715_070433819.jpg' alt=''>
+        <p class="img-box-addeess">Pepsi Goli mirpur-2</p>
+        <p class="img-box-area">Mirpur, Dhaka</p>
+      </div>
+      </div>
+      <div  class="grid-box">
+        <img loading="lazy" class='grid-item grid-item-3 wow fadeIn' src='https://lh3.googleusercontent.com/pw/AM-JKLU6wYPYC8u8YOGS1r66W6JeiUn_c-H7xllPHrvRBxr_pNjVAWQ80BUej0vNwMg55VJHMm6txkn1PPHBrWpcGvfbfT4zD-f-wXFdZhsGmW3_1tDeh8E3RwUdRiqDvYNbUf9l_JgftDvWORgGK3WPFZ6siA=w1659-h933-no?authuser=0' alt=''>
+        <p class="img-overlay">15.07.22</p>
+        <p>Commerce College Road, Mirpur<span>Rabby</span></p>
+      </div>
+      <div>
+        <img loading="lazy" class='grid-item grid-item-3' src='https://lh3.googleusercontent.com/KBjFsWnz5fzBhg4OKCBsur62UIkWnwh9twpCducwtuATLNQraY4ETeGQPb0fFb8L_FrAzGyLu4nKpFpFqsOvlQbI25g5rxqoCIs5e178iq1kkQQB2uGHSSpi0kCQjj8L3AgnTOjnM4uBWq0z09JaPGvwT40jALjhFCUndQp9P94EYfCFdUrGQGQ7_nOsygrItIgQCzKsufGzeVVw-5DxaIcBbxwxaIyVJqxxGEhTKPGtqUboRIszuXMEX9oWCqtx2B08ayzL0eaJtBra3xkqHDWCOEflq63sKtYqPTNzhj7i5bbxYkephgdfRZ087yIUEek-4H0RYprHFmKbC0yemkSwJ_3HiksmJv2FZY1RvSssiOeVwUXepaevuDNW9kRn_hgsdl2OBz2H-14KTakxLZxPVJ81cn6Sid_joYz_nv87aefTZ9-eOp8KEDUf__lytPJnuYcL4aCV44ROAvg-R9oOWBNsB8YG0ODMNxssbsDAbPGr7YF2JzONkQU8c4n_CFUCrKLC4ksSrR6oE1VpkYAQ9gMDUwzeit2YUmlBOGTDwKoqd33VN3wHeuyOAoQSa4D8BAn_se9N1Ec85cim_ZIM4KzdXbeRO3o6KWBJ0SngoWhOXWEjl5kZIO-sdcLZVMjy8SDcAkoBU6nVeoRnd4E8Djj6MgAU57u-Fv5J0WIJFQUFeE6zaltNOeFiRyiJCZmaidBFpgV_3JYM5e6KHmgdqY6ainp-7XFNcCA7WTuhqhvgP9lvi2irCMOW0L_so-cHcnnpmqtNKzl6JrK-z_qc3cQGr0frAIYIx8aJPcF4gqNxKw3N2tvI3lrKjwwa1fi5VDFS=w500-h667-no?authuser=0' alt=''>
+        <p>Heart foundation road, Mirpur-6<span>22.03.22</span></p>
+      </div>
+
+
+    </div>
+    <div class="col-md-12 text-center">
+      <a class="btn btn-outline-light mt-5 viewpost-btn" href="gallery.html">Gallery</a>
+    </div>
+    <!-- End -->
+
+  </section>
+
+  <!-- Explore Main Section -->
+  <section class="text-center text-light same-height-top">
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- About US SECTION -->
+
+  <section id="share-head-section" class="bg-dark same-height-top">
+
+  </section>
+
+  <!-- About Us Section -->
+  <section id="Share-main-section" class=" bg-light pt-5 text-dark">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-6 my-2 wow fadeInLeft text-center">
+          <!-- -->
+          <img class="img-fluid rounded" src="img/asia.png" alt="Explore Image" style="width: 100%">
+        </div>
+
+        <div class="col-md-12 col-lg-6 mt-4 wow fadeInRight">
+
+
+          <!-- -->
+          <!-- ACCORDIAM -->
+
+
+
+
+          <!-- end of container -->
+          <div id="acordiam" role="tablist" class="text-light aboutus-box" style="font-style: italic;">
+            <div class="aboutus-box">
+            <p class="aboutus-question">What is Asiasbook?</p>
+            <p class="aboutus-answer">Asiasbook is a website designed to help you highlight waste management issues in Dhaka, Bangladesh.
+Users can upload images and location details wherever they find this problem after they have registered.</p>
+            </div>
+
+            <div class="aboutus-box">
+            <p class="aboutus-question">What is our goal at Asiasbook?</p>
+            <p class="aboutus-answer">Our goal is to create a simple and effective platform for our users to help bring raise awareness about this ongoing issue.</p>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+          <button class="btn btn-outline-light mt-3 cu-btn" type="button" data-toggle="modal" data-target="#contactModal" name="button">Contact Us</button>
+          <p class="lead text-light mt-3 pb-2">Copyright &copy; 2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+  <!-- FOOTER SECTION -->
+  <!-- <footer id="footer-section" class="text-center text-light py-5 ">
+
+    </footer> -->
+
+  <!-- Contact Modal -->
+  <div class="modal uk-animation-scale-up" id="contactModal">
+    <div class="container">
+      <div class="modal-dialog">
+        <div class="modal-content m-auto contact-model-content">
+          <div class="modal-header text-center text-success">
+            <h3>Contact Us</h3>
+            <button class="close text-dark" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="POST">
+              <div class="form-group green-outline">
+                <input type="email" id="text" name="Email" class="form-control green-outline" placeholder="Enter name">
+              </div>
+              <div class="form-group green-outline">
+                <input type="email" id="email" name="Email" class="form-control green-outline" placeholder="Enter email">
+              </div>
+              <div class="form-group green-outline">
+                <textarea name="Message" id="message" class="form-control green-outline contact-area" placeholder="Enter Message"></textarea>
+              </div>
+              <input class="btn btn-success form-control-lg form-control" type="submit" name="" value="Send">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+
+  <div class="modal uk-animation-scale-up" id="LoginModal">
+    <div class="container">
+      <div class="modal-dialog">
+        <div class="modal-content login-modal-content m-auto">
+
+          <div class="main">
+            <button class="close text-dark" data-dismiss="modal">&times;</button>
+            <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="signup">
+              <form>
+                <label for="chk" aria-hidden="true">Sign In</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Sign In</button>
+
+              </form>
+            </div>
+
+            <div class="login">
+              <form>
+
+
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="User name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <input type="password" name="pswd" placeholder="Re-enter Password" required="">
+                <input class="check login-check" type="checkbox" name="" value=""><a class="text-dark check-text login-check-text" href="#" data-toggle="modal" data-target="#tncmodal"> Terms of Service</a>
+                <button>Sign up</button>
+              </form>
+            </div>
+          </div>
+          <!-- <div class="modal-body f-pass text-dark">
+                        <form action="somthing.php" method="get">
+                            <div class="form-group green-outline">
+                                <input type="email" id="email" name="Email" class="form-control green-outline" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control green-outline" type="password" name="password" placeholder="Enter password">
+                            </div>
+                            <input class="btn btn-success form-control-lg form-control" type="submit" name="" value="Login">
+                            <span class="mt-2 d-block">Forgot Password ? <a class="link-item text-success" href=""> Click Here </a></span>
+                            <p class="lead text-dark text-center mt-4 mb-2">Dont Have an Account?
+                                <br>
+                                <a class="link-item text-success" href="#" data-toggle="modal" data-dismiss="modal" data-target="#SignupModal">Sign Up</a>
+                            </p>
+                        </form>
+                    </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIGNUP Modal -->
+
+  <div class="modal uk-animation-scale-up" id="SignupModal">
+    <div class="container">
+      <div class="modal-dialog">
+        <div class="modal-content text-dark">
+          <div class="modal-header text-center ">
+            <h3 class="text-cente text-success">Sign Up Here</h3>
+            <button class="close text-dark" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body f-pass">
+            <form action="" method="get">
+              <div class="form-group">
+                <input type="text" id="name" name="esername" class="form-control green-outline" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control green-outline" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <input type="number" id="age" name="age" class="form-control green-outline" placeholder="Enter Age">
+              </div>
+              <div class="form-group">
+                <input class="form-control green-outline" type="password" placeholder="Enter Password" name="password1">
+              </div>
+              <div class="form-group">
+                <input class="form-control green-outline" type="password" placeholder="Enter Password Again" name="password2">
+              </div>
+              <input type="checkbox" name="" value=""><a class="text-dark" href="#" data-toggle="modal" data-target="#tncmodal"> Terms of Service</a>
+              <input class="btn btn-success form-control mt-4" type="submit" value="Sign Up">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- T&C Modal -->
+  <div class="modal uk-animation-scale-up" id="tncmodal">
+    <div class="container">
+      <div class="modal-dialog gredient-signup text-dark">
+        <div class="modal-content bg-light">
+          <div class="modal-header text-center ">
+            <h2 class="text-success">Terms of Service</h2>
+            <button class="close text-dark uk-animation-scale-down" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body f-pass text-justify comment-modal-body">
+            Please read The Terms of Service (Terms”, ‘Terms of Service’) carefully before using <a class="text-success">Asiasbook</a>
+            <br><br> Your access to and use of the Service is conditioned on your acceptance and compliance with these Terms. These Terms apply to all visitors, users and others who access or use this service.
+            <br><br>
+            <b class="text-success">An introduction to our Terms of Service at Asiasbook</b>
+            <br> 1. Our mission is to provide a platform whereby users can highlight waste issues in their community. The Asiasbook platform offers a place where users can post comments, photos and videos about this issue
+            <br> 2. You own the content that you post. You also grant us certain rights and license to use it.
+            <br> 3. You are responsible for the content you post.
+            <br> 4. You are solely responsible for your own use of the Asiasbook platform.
+            <br><br>
+            <b class="text-success">Registration</b>
+            <br> 1. You may browse all the content on Asiasbook without creating an account
+            <br> 2. Creating an account with Asiasbook will enable you to post comments/photos
+            <br> 3. You agree to be responsible for maintaining the confidentiality of your passwords or other account identifiers which you choose and all activities that occur under your account.
+            <br> 4. By accessing or using the Service you agree to be bound by these Terms.
+            <br> 5. If you disagree with any part of the Terms you then do not accept as only users who accept our Terms of Service will be permitted to post comments/photos
+            <br><br>
+
+            <b class="text-success">Links</b>
+            <br> 1. Our service may contain links to other websites or services that are not owned by Asiasbook. Asiasbook has no control over, and assumes no responsibility for the content, privacy policies or practices of any third party
+            websites or services.
+            <br> 2. It is strongly advised that you read the terms and conditions of service and privacy policies of any third party websites or services that you visit
+            <br><br>
+
+            <b class="text-success">Termination</b>
+            <br> 1. We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.
+            <br><br>
+
+            <b class="text-success">I agree</b>
+            <br> 1. I have read and agree to all the Terms and Conditions above and the Asiasbook Terms of Use.
+            <p>
+              <br>
+              <br>
+              <br>
+
+
+
+              <!-- By using this site I agree to post information that is accurate
+            <br>
+            <br>
+            By using this site I agree to write my comments following the template laid out by Asiasbook in the "About Us" Section.
+            <br>
+            <br> -->
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Comment Box -->
+  <div class="modal fade"  tabindex="2" role="dialog" aria-hidden="true" id="createpost">
+    <div class="container">
+      <div class="modal-dialog text-dark" id="fy">
+        <div class="modal-content create-post-box text-dark">
+          <div class="modal-header">
+            <div class="mt-1">
+              <span class="lead pt-3"><b>Upload Image</b></span><br>
+
+            </div>
+            <button class="close text-dark uk-animation-scale-down" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body f-pass comment-modal-body">
+            <form>
+  <div class="form-row">
+
+   <div class="form-group col-12 comment-dropdown">
+     <select class="custom-select mr-sm-2 form-control green-outline " id="inlineFormCustomSelect" required>
+       <option selected hidden>Area</option>
+       <option value="1">Chawk Bazar</option>
+       <option value="1">Dhanmondi</option>
+       <option value="1">Hemayetpur</option>
+       <option value="1">Krwan Bazar</option>
+       <option value="1">Mirpur</option>
+       <option value="1">Mohommodpur</option>
+       <option value="1">Mohakhali</option>
+       <option value="1">Motijhil</option>
+       <option value="1">Shahbug</option>
+      <option value="1">Shawrapara</option>
+
+     </select>
+   </div>
+
+   <input class="form-control green-outline mb-4" type="text" placeholder="Write street/road" required>
+
+    <div class="avatar-upload">
+       <div class="avatar-edit">
+           <input required type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+           <label for="imageUpload"><i class="fa fa-camera" aria-hidden="true"></i>
+  </label>
+       </div>
+       <div class="avatar-preview">
+           <div id="imagePreview" style="background-image: url(https://png.pngtree.com/png-vector/20191129/ourmid/pngtree-image-upload-icon-photo-upload-icon-png-image_2047545.jpg);">
+           </div>
+       </div>
+   </div>
+
+
+
+   <!-- <div class="form-group mb-5">
+       <input type="file" id="file">
+   </div> -->
+
+   <button class="btn btn-success btn-block createpost-submit-btn" type="button" name="button">Upload</button>
+
+   <div class="nonuser-login-box">
+                  <p>You need to login to upload an image. Click the button below to Login or Sign up</p>
+      <a class="btn btn-outline-success" href="{% url 'index' %}" name="button">LOGIN/REGISTER</a>
+    </div>
+  </form>
+  </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Comment Box End -->
+
+  <!-- Auto Popup Box -->
+
+  <div class="bts-popup" role="alert">
+
+    <div class="bts-popup-container text-center">
+
+      <!-- <div class="row pt-4">
+        <div class="col-12 bts-popup-text"><i class="fa fa-check-square-o bts-popup-icon-text" aria-hidden="true"></i></div>
+        <div class="col-12 bts-popup-text counter">আমরা সকলকে আহবান করবো এশিয়াসবুকে রেজিষ্ট্রেশন করতে এবং নিয়মিত ছবি আপলোড করে এই সমস্যাটিকে চিহ্নিত করতে। <br> <br>
+যদি আমরা আমাদের বাসস্থানের এক কিলোমিটারের মাঝে কোথাও বর্জ্যের উপস্থিতির ছবি পাই তবে আমরা নিজেরাই সেটি পরিষ্কারের উদ্যোগ নিবো।</div>
+      </div> -->
+      <div class="row pb-3">
+        <div class="col-12 bts-popup-text"><i class="fa fa-picture-o bts-popup-icon-image" aria-hidden="true"></i>Uploaded Images </div>
+        <div class="col-12 bts-popup-text counter">117</div>
+      </div>
+      <p class="bts-popup-date">Message!</p>
+
+        <a href="#0" class="bts-popup-close img-replace">Close</a>
+        <button class="btn btn-outline-light btn-sm popup-button mt-5" href="index.html" name="button">Yes, I Agree</button>
+    </div>
+</div>
+
+  <!-- Auto Popup Box End -->
+
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+  <script src="js/textilling.js"></script>
+  <script src="js/lettering.js"></script>
+  <script src="js/fotorama.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://use.fontawesome.com/a3068b5bda.js"></script>
+
+  <script type="text/javascript">
+    // Targets all textareas with class "txta"
+    let textareas = document.querySelectorAll('.txta'),
+      hiddenDiv = document.createElement('div'),
+      content = null;
+
+    // Adds a class to all textareas
+    for (let j of textareas) {
+      j.classList.add('txtstuff');
+    }
+
+    // Build the hidden div's attributes
+
+    // The line below is needed if you move the style lines to CSS
+    // hiddenDiv.classList.add('hiddendiv');
+
+    // Add the "txta" styles, which are common to both textarea and hiddendiv
+    // If you want, you can remove those from CSS and add them via JS
+    hiddenDiv.classList.add('txta');
+
+    // Add the styles for the hidden div
+    // These can be in the CSS, just remove these three lines and uncomment the CSS
+    hiddenDiv.style.display = 'none';
+    hiddenDiv.style.whiteSpace = 'pre-wrap';
+    hiddenDiv.style.wordWrap = 'break-word';
+
+    // Loop through all the textareas and add the event listener
+    for (let i of textareas) {
+      (function(i) {
+        // Note: Use 'keyup' instead of 'input'
+        // if you want older IE support
+        i.addEventListener('input', function() {
+
+          // Append hiddendiv to parent of textarea, so the size is correct
+          i.parentNode.appendChild(hiddenDiv);
+
+          // Remove this if you want the user to be able to resize it in modern browsers
+          i.style.resize = 'none';
+
+          // This removes scrollbars
+          i.style.overflow = 'hidden';
+
+          // Every input/change, grab the content
+          content = i.value;
+
+          // Add the same content to the hidden div
+
+          // This is for old IE
+          content = content.replace(/\n/g, '<br>');
+
+          // The <br ..> part is for old IE
+          // This also fixes the jumpy way the textarea grows if line-height isn't included
+          hiddenDiv.innerHTML = content + '<br style="line-height: 3px;">';
+
+          // Briefly make the hidden div block but invisible
+          // This is in order to read the height
+          hiddenDiv.style.visibility = 'hidden';
+          hiddenDiv.style.display = 'block';
+          i.style.height = hiddenDiv.offsetHeight + 'px';
+
+          // Make the hidden div display:none again
+          hiddenDiv.style.visibility = 'visible';
+          hiddenDiv.style.display = 'none';
+        });
+      })(i);
+    }
+  </script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      }
+    });
+  </script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.collapse.in').prev('.panel-heading').addClass('active');
+      $('#accordion, #bs-collapse')
+        .on('show.bs.collapse', function(a) {
+          $(a.target).prev('.panel-heading').addClass('active');
+        })
+        .on('hide.bs.collapse', function(a) {
+          $(a.target).prev('.panel-heading').removeClass('active');
+        });
+    });
+  </script>
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+
+  <script>
+  jQuery(document).ready(function($){
+    window.onload = function(){
+   setTimeout(function(){
+        $(".bts-popup").addClass('is-visible');
+   }, 5000);
+};
+
+  // window.onload = function (){
+  //   $(".bts-popup").delay(1000).addClass('is-visible');
+	// }
+
+	//open popup
+	$('.bts-popup-trigger').on('click', function(event){
+		event.preventDefault();
+		$('.bts-popup').addClass('is-visible');
+	});
+
+	//close popup
+	$('.bts-popup').on('click', function(event){
+		if( $(event.target).is('.bts-popup-close') || $(event.target).is('.bts-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.bts-popup').removeClass('is-visible');
+	    }
+    });
+});
+  </script>
+
+  <script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+</body>
+
+</html>
